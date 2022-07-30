@@ -9,6 +9,16 @@ public class FakeMessageGenerator {
         return faker.numerify("####");
     }
 
+    public static String generateFiveDigitsZipCode() {
+        Faker faker = new Faker();
+        return faker.numerify("#####");
+    }
+
+    public static String generateSixDigitsZipCode() {
+        Faker faker = new Faker();
+        return faker.numerify("######");
+    }
+
     public static String generateFirstName() {
         Faker faker = new Faker();
         return faker.name().firstName();
@@ -16,7 +26,7 @@ public class FakeMessageGenerator {
 
     public static String generateLastName() {
         Faker faker = new Faker();
-        return faker.name().firstName();
+        return faker.name().lastName();
     }
 
     public static String generateEmail() {

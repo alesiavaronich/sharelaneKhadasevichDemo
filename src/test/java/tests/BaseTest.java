@@ -1,6 +1,5 @@
 package tests;
 
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -24,10 +23,19 @@ public class BaseTest {
         PropertyManager propertyManager = new PropertyManager();
         propertyManager.loadData();
         System.setProperty("webdriver.chrome.driver", propertyManager.get(path));
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        setImplicitlyWait();
+    }
 
+    public void setImplicitlyWait() {
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    }
+
+    public void removeImplicitlyWait() {
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     }
 
     @AfterMethod(alwaysRun = true)

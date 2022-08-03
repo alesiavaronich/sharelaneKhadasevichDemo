@@ -8,7 +8,7 @@ import pages.pompages.SignUpFormPomPage;
 import pages.services.SendZipService;
 import utils.FakeMessageGenerator;
 
-public class SignUpFluentPomTest extends BaseTest {
+public class SignUpFluentPomTest extends BaseWithoutArchitectureTest {
 
     @Test
     public void fiveDigitZipCodeTest() {

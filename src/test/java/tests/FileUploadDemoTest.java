@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-public class FileDemoTest {
+public class FileUploadDemoTest extends BaseWithFactoryTest{
 
     @Test
     public void readFromFileTest() throws IOException {

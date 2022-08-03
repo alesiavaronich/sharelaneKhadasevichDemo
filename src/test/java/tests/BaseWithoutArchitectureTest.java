@@ -8,7 +8,7 @@ import utils.PropertyManager;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
+public class BaseWithoutArchitectureTest {
 
     public WebDriver driver;
 
@@ -16,9 +16,9 @@ public class BaseTest {
     public void setUp() {
         //Open Chrome browser
         String os = System.getProperty("os.name");
-        String path = "PATH_TO_DRIVER_WIN";
+        String path = "PATH_TO_CHROME_WIN";
         if (!os.contains("Windows")) {
-            path = "PATH_TO_DRIVER_MAC";
+            path = "PATH_TO_CHROME_MAC";
         }
         PropertyManager propertyManager = new PropertyManager();
         propertyManager.loadData();

@@ -7,7 +7,7 @@ import pages.fluentpage.SignUpFormLoadablePomPage;
 import pages.loadablepage.ZipcodeLoadablePomPage;
 import utils.FakeMessageGenerator;
 
-public class SignUpLoadablePomTest extends BaseTest {
+public class SignUpLoadablePomTest extends BaseWithSingletonTest {
 
     @Test
     public void fiveDigitZipCodeTest() {

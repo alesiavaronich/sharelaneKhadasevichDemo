@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTest {
+public class LoginTest extends BaseWithoutArchitectureTest {
 
     private final String PASSWORD = "1111";
     private final String EMAIL = "brian_rao@578.16.sharelane.com";

@@ -10,7 +10,7 @@ import pages.pagefactorypages.SignUpFormFactoryPage;
 import pages.pagefactorypages.ZipcodeFactoryPage;
 import utils.FakeMessageGenerator;
 
-public class SignUpFactoryTest extends BaseTest {
+public class SignUpFactoryTest extends BaseWithFactoryTest {
 
     @Test
     public void fiveDigitZipCodeTest() {
